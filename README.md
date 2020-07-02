@@ -17,7 +17,7 @@
 #### Preview & prototype
  - If you want to see how it looks: [preview](https://rithienatan.github.io/website-portfolio-template/)
  - Prototype:
- ![](/website-portfolio-template/prototype-website-curriculum.png)
+ ![](https://github.com/rithienatan/website-portfolio-template/blob/master/prototype-website-curriculum.PNG)
 
 ---
 
@@ -28,6 +28,8 @@
     - [Particle.js - by Vincent Garreau](https://vincentgarreau.com/particles.js/)
     - [Install particle JS for React](https://www.npmjs.com/package/react-particles-js)
  - Versioning Rules: [Semantic Versioning](https://semver.org/)
+ - How to configure repository for Github Pages: [Github Pages setup guide](https://docs.github.com/en/enterprise/2.13/user/articles/configuring-a-publishing-source-for-github-pages)
+ - How to deploy react-app on github pages: [Deploy project](https://medium.com/@_mariacheline/deploy-create-react-app-project-to-github-pages-2eb6deda5b89)
 
 ---
 
