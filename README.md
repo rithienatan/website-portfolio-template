@@ -22,6 +22,7 @@
 ---
 
 #### Resources used and References
+ - Prototype made with: [AdobeXD](https://www.adobe.com/br/products/xd.html)
  - JSX/SCSS: [ReactJS](https://pt-br.reactjs.org/)
  - Framework: [Material UI](https://material-ui.com/pt/)
  - Background:
