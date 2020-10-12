@@ -1,6 +1,6 @@
 # website-portfolio-template
 
-#### @author Rithie Natan Carvalhaes Prado - Founder & CTO at Hired, Corp.
+#### @author Rithie Natan Carvalhaes Prado - Co-Founder & CTO at Hired, Corp.
  > Target repository for a website portfolio model.
 
 ---
