@@ -22,3 +22,10 @@ jobs:
           npm i
           npm run build
           npm run export
+          touch out/.nojekyll
+      
+      - name: Deploy
+        uses: rithienatan/website-portfolio-code@2.0.0
+        with:
+          branch: gh-pages
+          folder: out
