@@ -21,7 +21,6 @@ jobs:
           ls website-portfolio-code
           npm run build
           npm run export
-          touch out/.nojekyll
 
       - name: Deploy
         - uses: rithienatan/website-portfolio-template
