@@ -15,3 +15,8 @@ jobs:
         with: 
           node-version: 18.3.0
           cache: npm
+      
+      - name: Build
+        run: |
+          ls website-portfolio-code
+          npm ci
