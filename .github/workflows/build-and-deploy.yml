@@ -19,7 +19,7 @@ jobs:
       - name: Build
         run: |
           cd website-portfolio-code
-          npm i
+          npm ci
           npm run build
           npm run export
           touch out/.nojekyll
