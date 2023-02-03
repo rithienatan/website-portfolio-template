@@ -15,15 +15,3 @@ jobs:
         with: 
           node-version: 18.3.0
           cache: npm
-
-      - name: Build
-        - run: |
-            ls website-portfolio-code
-            npm run build
-            npm run export
-
-      - name: Deploy
-        uses: rithienatan/website-portfolio-template
-        with:
-          branch: gh-pages
-          folder: out
