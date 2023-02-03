@@ -18,5 +18,5 @@ jobs:
       
       - name: Build
         run: |
-          ls website-portfolio-code
+          cd website-portfolio-code
           npm i
