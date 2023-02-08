@@ -30,8 +30,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Access code folder
-        run: cd website-portfolio-code
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -66,6 +64,8 @@ jobs:
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+      - name: Access code folder
+        run: cd website-portfolio-code
       - name: Install dependencies
         run: npm i
       - name: Build with Next.js
