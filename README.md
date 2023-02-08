@@ -10,7 +10,7 @@ Target repository for a website portfolio model.
 - If you want to see how it looks: [preview](https://rithienatan.github.io/website-portfolio-template/)
 - Prototype: 
 
-![](./prototype-website-curriculum.PNG)
+![](./docs/prototype-website-curriculum.PNG)
 
 ---
 
