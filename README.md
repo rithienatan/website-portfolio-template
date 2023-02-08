@@ -2,11 +2,11 @@
 
 Target repository for a website portfolio model.
 
-> ***Current version: v2.0.0***
+> ***Current version: v2.1.0***
 
 ---
 
-#### Preview & prototype
+## Preview & prototype
 - If you want to see how it looks: [preview](https://rithienatan.github.io/website-portfolio-template/)
 - Prototype: 
 
@@ -14,24 +14,45 @@ Target repository for a website portfolio model.
 
 ---
 
-#### Resources used and References
+## Resources used and References
 
 - Prototype made with: [AdobeXD](https://www.adobe.com/br/products/xd.html)
-- JSX/SCSS: [ReactJS](https://pt-br.reactjs.org/)
-- Framework: [Material UI](https://material-ui.com/pt/)
+- Language: [TypeScript](https://www.typescriptlang.org/)
+- Library: [React](https://pt-br.reactjs.org/)
+- Frameworks: [Material UI](https://mui.com/) and [NextJS](https://nextjs.org/)
 - Background:
    - [Particle.js - by Vincent Garreau](https://vincentgarreau.com/particles.js/)
-   - [Install particle JS for React](https://www.npmjs.com/package/react-particles-js)
+   - [Install tsParticles for React](https://particles.js.org/)
 - Versioning Rules: [Semantic Versioning](https://semver.org/)
-- How to configure repository for Github Pages: [Github Pages setup guide](https://docs.github.com/en/enterprise/2.13/user/articles/configuring-a-publishing-source-for-github-pages)
-- How to deploy react-app on github pages: [Deploy project](https://medium.com/@_mariacheline/deploy-create-react-app-project-to-github-pages-2eb6deda5b89)
 
 ---
 
-#### Patch Notes
+## How to deploy into Github Pages
 
+- Goes to repository settings.
+- Select Pages options on left side. 
+- Choose "source" via Github Actions.
+- Create folders .github/workflows into root directory.
+- Create .yml inside ".github/workflows" and create your script.
+- git add .github/
+- git commit
+- git push origin main-branch
+- Github Action will run after push.
+
+References: [Github Actions quickstart](https://docs.github.com/en/actions/quickstart)
+
+.yml example: [build and deploy next app](https://github.com/rithienatan/website-portfolio-template/blob/master/.github/workflows/build-and-deploy.yml)
+
+
+---
+
+## Patch Notes
+
+- v2.1.0: Update documentation. Implements actions in order to deploy into github pages.
 - v2.0.0: Change project based modules. Refactor pure ReactJS to NextJS and JavaScript to TypeScript. Update particlejs to tsparticles.
 - v1.0.0: Stable version of curriculum vitae model.
+
+---
 
 ## License
 
