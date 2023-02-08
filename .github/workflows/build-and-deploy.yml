@@ -65,7 +65,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Access code folder
-        run: cd website-portfolio-code
+        run: cd website-portfolio-code/
       - name: Install dependencies
         run: npm i
       - name: Build with Next.js
