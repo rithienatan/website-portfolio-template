@@ -46,10 +46,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18.13.0"
-      - name: Set Workspace
-        working-directory: ./website-portfolio-code
       - name: Setup Pages
         uses: actions/configure-pages@v3
+        working-directory: ./website-portfolio-code
         with:
           # Automatically inject basePath in your Next.js configuration file and disable
           # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
