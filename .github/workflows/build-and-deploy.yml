@@ -33,7 +33,7 @@ jobs:
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          if [ -f "/home/runner/work/website-portfolio-template/website-portfolio-template/website-portfolio-code/package.json" ]; then
+          if [ -f "${{ github.workspace }}/website-portfolio-code/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=i" >> $GITHUB_OUTPUT
             echo "runner=npx" >> $GITHUB_OUTPUT
@@ -53,8 +53,9 @@ jobs:
           # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
           #
           # You may remove this line if you want to manage the configuration yourself.
-          run: cd website-portfolio-code
-          static_site_generator: next
+          static_site_generator: |
+            cd website-portfolio-code
+            next
       - name: Restore cache
         uses: actions/cache@v3
         with:
