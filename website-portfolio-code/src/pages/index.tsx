@@ -49,7 +49,7 @@ export default function Index(): JSX.Element
                 <meta name="description" content="Web site created using create-react-app" />
                 <link rel="manifest" href="/manifest.json" />
 
-                <link rel="shortcut icon" type="image/png" href="/curriculum-icon.png" />
+                <link rel="shortcut icon" type="image/png" href="curriculum-icon.png" />
 
                 <title>Website Portfolio Code</title>
             </Head>
