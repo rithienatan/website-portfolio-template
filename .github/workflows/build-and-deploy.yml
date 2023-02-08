@@ -36,7 +36,7 @@ jobs:
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          if [ -f "${{ github.workspace }}/website-portfolio-code/package.json" ]; then
+          if [ -f "${{ github.workspace }}/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=i" >> $GITHUB_OUTPUT
             echo "runner=npx" >> $GITHUB_OUTPUT
@@ -68,17 +68,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
-        run: |
-          cd website-portfolio-code
-          npm i
+        run: npm i
       - name: Build with Next.js
-        run: |
-          cd website-portfolio-code 
-          npm run build
+        run: npm run build
       - name: Static HTML export with Next.js
-        run: |
-          cd website-portfolio-code
-          npm run export
+        run: npm run export
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
