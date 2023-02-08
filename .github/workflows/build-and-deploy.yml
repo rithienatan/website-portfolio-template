@@ -36,7 +36,7 @@ jobs:
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          if [ -f "${{ github.workspace }}/package.json" ]; then
+          if [ -f "/home/runner/work/website-portfolio-template/website-portfolio-code/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=i" >> $GITHUB_OUTPUT
             echo "runner=npx" >> $GITHUB_OUTPUT
