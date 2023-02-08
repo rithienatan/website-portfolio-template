@@ -28,7 +28,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - working-directory: ./website-portfolio-code
+      - name: Select Working Directory
+        working-directory: ./website-portfolio-code
       - name: Checkout
         uses: actions/checkout@v3
       - name: Detect package manager
